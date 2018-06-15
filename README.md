@@ -2,11 +2,11 @@
 
 All work for my web search engine project. 
 
-0. **crawl.py** - pagerank, breadth first and breadth limited search on web graph after crawling
+0. **crawl.py** - pagerank, breadth first and breadth limited search implemeted on a crawled web graph
 
-1. **parsedata.py** - read WET crawl data and output temp index files for each input file and global pagetable file
+1. **parsedata.py** - read the common crawl dataset (WET format) and output temp index files for each input file and also create global pagetable file
 
-2. **mergesort.sh** - sort temporary index to on disk and merge to single file on disk chunked into size 2M lines each
+2. **mergesort.sh** - sort temporary index on disk and merge to a globally sorted file on disk, chunked into files of 2M lines each
 
 3. **makeindex.py** - read merged chunks and create final lexicon and index file
 
